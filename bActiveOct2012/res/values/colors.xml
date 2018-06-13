@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="title_bar_bg">#4CB040</color> 
+    <color name="title_bar_text">#FFFFFF</color>
+    
+    <color name="today_bg">#FFFFFF</color>
+    <color name="yesterday_bg">#FFFFFF</color>
+    
+    <color name="tab_bar_start">#808080</color>
+    <color name="tab_bar_end">#3E3E3E</color>
+    <color name="tab_item_start">#3E3E3E</color>
+    <color name="tab_item_end">#000000</color>
+    <color name="tab_item_selected">#CCC</color>
+    
+    <color name="radio_button_start">#F0F0F0</color>
+    <color name="radio_button_end">#DEDEDE</color>
+    <color name="radio_button_checked_start">#4CB040</color>
+    <color name="radio_button_checked_end">#4CB040</color>
+    <color name="radio_button_text">#000000</color>
+    
+    <color name="table_text">#FFFFFF</color>
+    <color name="table_text_you">#FFFFFF</color>
+    <color name="table_text_others">#FFFFFF</color>
+    <color name="table_bg_top">#4CB040</color>
+    <color name="table_bg_row">#404040</color>
+    
+    <color name="graph_view_bg_light">#5C5A5A</color>
+    <color name="graph_view_bg_dark">#2A2A2A</color>
+    <color name="graph_view_text">#FFFFFF</color>
+    <color name="graph_view_point_outlines">#FFFFFF</color>
+    <color name="graph_view_group_point">#778899</color>
+    <color name="graph_view_you_point">#4CB040</color>
+    <color name="graph_view_group_line">#778899</color>
+    <color name="graph_view_you_line">#4CB040</color>
+    <color name="graph_view_group_text">#778899</color>
+    <color name="graph_view_you_text">#4CB040</color>
+
+
+<color name="black">#000</color>
+	<color name="white">#ffffffff</color>
+	<color name="tabColor">#bebebe</color>
+<color name="red">#ff0000</color>
+<color name="grey">#778899</color>
+<color name="blue">#00bfff</color>
+<color name="graph_view_text_today">#4CB040</color>
+<color name="graph_view_future_text">#888888</color>
+</resources>

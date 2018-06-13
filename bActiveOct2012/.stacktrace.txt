@@ -1,0 +1,18 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.swanseacharm.bactive/org.swanseacharm.bactive.ui.Today}: java.lang.NullPointerException
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1768)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1784)
+	at android.app.ActivityThread.access$1500(ActivityThread.java:123)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:939)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:123)
+	at android.app.ActivityThread.main(ActivityThread.java:3839)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:507)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:841)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:599)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+	at org.swanseacharm.bactive.ui.Today.onCreate(Today.java:78)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1722)
+	... 11 more

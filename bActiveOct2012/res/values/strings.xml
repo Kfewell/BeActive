@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="active">bActive</string>
+    <string name="steps">Steps</string>
+    <string name="calories">Calories</string>
+    <string name="distance">Distance</string>
+    <string name="cals">Cals</string>
+    <string name="dist">Dist</string>
+    
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="week">Past Week</string>
+    <string name="history">History</string>
+    
+    <string name="today_below_average">Your activity levels are below average.</string>
+    <string name="today_below_mid_point">Your activity levels are above average.</string>
+    <string name="today_below_top_20">Your activity levels are well above average.</string>
+    <string name="today_above_top_20">Your activity levels are among the highest.</string>
+    <string name="today_no_data">It\'s a brand new day... get out there!</string>
+    <string name="today_no_feedback">bActive - today\'s progress</string>
+
+    
+    <string name="yesterday_below_average">Your activity levels were below average.</string>
+    <string name="yesterday_below_mid_point">Your activity levels were above average.</string>
+    <string name="yesterday_below_top_20">Your activity levels were well above average.</string>
+    <string name="yesterday_above_top_20">Your activity levels were among the highest.</string>
+    <string name="yesterday_no_data">There was no recorded activity yesterday.</string>
+    <string name="yesterday_no_feedback">bActive - yesterday\'s results</string>
+    
+    
+    <string name="title_alt_text">Well done, keep it up!</string>
+
+ 	<string name="app_name">bActive</string>
+ 	<string name="select_activity">Select Activity</string>
+ 	<string name="help">Help</string>
+ 	
+ 	<string name="walking">Walking</string>
+ 	<string name="running">Running</string>
+ 	<string name="cycling">Cycling</string>
+ 	
+ 	<!-- Menu -->
+ 	<string name="previous_week">Previous Week</string>
+ 	<string name="next_week">Next Week</string>
+ 	<string name="viewDataUsage">Data Usage</string>
+ 	<string name="syncNow">Sync Now</string>
+ 	<string name="tune_activity_monitor">Tune Activity Monitor
+</string>
+</resources>

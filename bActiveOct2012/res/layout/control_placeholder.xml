@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+	   <ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/bactive_med"
+		android:layout_centerInParent="true"
+		 />
+    	<TextView
+	        android:text="Thankyou for participating in bActive!"
+	        android:paddingTop="170dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        	android:layout_centerInParent="true"
+	        ></TextView>
+        <TextView
+	        android:text="Press the home button to leave this screen."
+	        android:paddingTop="200dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        	android:layout_centerInParent="true"
+	        ></TextView>
+</RelativeLayout>

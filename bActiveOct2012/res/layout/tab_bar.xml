@@ -1,0 +1,70 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/tabBarLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_alignParentBottom="true"
+	android:layout_centerHorizontal="true"
+	android:paddingTop="5dip"
+	android:paddingBottom="5dip"
+	android:orientation="horizontal"
+	android:gravity="center"
+	android:background="@drawable/tab_bar_bg"
+>
+	<Button
+		android:id="@+id/todayTab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+		android:paddingTop="5dip"
+		android:paddingBottom="5dip"
+		android:drawableTop="@drawable/t_tab"
+		android:background="@drawable/tab_item"
+		android:text="@string/today"
+		android:textSize="10dip"
+		android:textColor="@color/white" />
+
+	<Button
+		android:id="@+id/yesterdayTab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_marginRight="10dip"
+		android:paddingTop="5dip"
+		android:paddingBottom="5dip"
+		android:drawableTop="@drawable/y_tab"
+		android:background="@drawable/tab_item"
+		android:text="@string/yesterday"
+		android:textSize="10dip"
+		android:textColor="@color/white" />
+
+	<Button
+		android:id="@+id/lastWeekTab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_marginRight="10dip"
+		android:paddingTop="5dip"
+		android:paddingBottom="5dip"
+		android:drawableTop="@drawable/w_tab"
+		android:background="@drawable/tab_item"
+		android:text="@string/week"
+		android:textSize="10dip"
+		android:textColor="@color/white" />
+
+	<Button
+		android:id="@+id/historyTab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_marginRight="10dip"
+		android:paddingTop="5dip"
+		android:paddingBottom="5dip"
+		android:drawableTop="@drawable/h_tab"
+		android:background="@drawable/tab_item"
+		android:text="@string/history"
+		android:textSize="10dip"
+		android:textColor="@color/white" />
+</LinearLayout>

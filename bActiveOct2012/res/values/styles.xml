@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomRadioButton">
+        <item name="android:padding">5dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radio_button_selector</item>
+        <item name="android:textColor">@color/radio_button_text</item>
+    </style>
+
+</resources>

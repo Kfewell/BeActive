@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <item android:id="@+id/ShowTutorialsAgain"
+     	android:title="Show tutorials again"
+     	/>
+     	
+     <item android:id="@+id/YourPhoneId"
+     	android:title="Your Phone ID: "
+   	/>
+
+    <item android:id="@+id/Help"
+          android:icon="@drawable/ic_menu_help"
+          android:title="@string/help"/>
+           
+     <item android:id="@+id/ViewDataUsage"
+     	android:icon="@drawable/ic_menu_info_details"
+     	android:title="@string/viewDataUsage" /> 
+     	
+      <item android:id="@+id/TuneActivityMonitor"
+     	android:title="@string/tune_activity_monitor" /> 	
+     	
+
+     <!--   <item android:title="@string/syncNow" 
+	     android:id="@+id/SyncNow" 
+	     android:icon="@drawable/ic_menu_refresh"/> -->
+</menu>

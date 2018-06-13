@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+>
+
+
+	<include
+        android:id="@+id/lastWeekControlBar"
+        layout="@layout/graph_title_bar" />
+
+
+		<include
+        android:id="@+id/lastWeekTabBar"
+        layout="@layout/tab_bar" />
+
+	<org.swanseacharm.bactive.ui.GraphView
+		android:id="@+id/lastWeekGraphView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/lastWeekControlBar"
+		android:layout_above="@id/lastWeekTabBar" />
+
+    <ProgressBar
+        android:id="@+id/lastWeekProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

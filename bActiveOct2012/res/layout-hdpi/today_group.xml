@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#808080"
+>
+ 	
+        
+    <LinearLayout
+        android:id="@+id/todayBGAnim"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical"
+    >      
+
+        <LinearLayout
+            android:id="@+id/todayGroupAnimLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scaleType="center"
+            android:gravity="bottom"
+            android:layout_weight="1"
+            android:background="@anim/green_landscape"
+        >
+            <ImageView
+                android:id="@+id/todayGroupAnim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@anim/walking_group" />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:id="@+id/todayYouAnimLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scaleType="center"
+            android:gravity="bottom"
+            android:layout_weight="1"
+            android:background="@anim/green_landscape_offset"
+        >
+
+            <ImageView
+                android:id="@+id/todayYouBelowAverageAnim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingRight="80dip"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@anim/walking_individual"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/todayYouBelowMidPointAnim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@anim/walking_individual"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/todayYouBelowTopAnim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@anim/walking_individual"
+                android:visibility="invisible" />
+
+            <ImageView 
+                android:id="@+id/todayYouAboveTopAnim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@anim/walking_individual"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+	<!--  aesthetic strip -->
+	  <include
+        android:id="@+id/todayTitleBar"
+        layout="@layout/title_bar" /> 
+	<LinearLayout
+	      android:layout_width="fill_parent"
+          android:layout_height="15dip"
+          android:background="@drawable/table_row_fade">
+	</LinearLayout>
+
+
+    <TableLayout
+        android:id="@+id/todayTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:stretchColumns="1"
+        android:background="@drawable/table_row_bg"
+        android:paddingBottom="8dip"
+    	>
+
+       <TableRow
+           
+            android:paddingTop="3dip"
+            android:paddingBottom="3dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+        >
+
+            <TextView  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/table_text"
+                android:textSize="20dip" />
+
+            <ImageView
+            	android:id="@+id/you_header_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/you_white_no_text_icon" />
+
+
+		<RelativeLayout 
+			 android:layout_width="fill_parent"
+			 android:layout_height="wrap_content"
+			 android:gravity="center">
+		          <ImageView
+	            	android:id="@+id/group_header_image"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"	             
+	                android:src="@drawable/group_grey_no_text_icon" />
+	              <ProgressBar
+			        android:id="@+id/dayProgressBar"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="#00000000"
+					android:cacheColorHint="#00000000"
+					android:visibility="invisible"
+					android:layout_marginTop="-10dip"
+					style="?android:attr/progressBarStyleSmall"
+					android:layout_centerInParent="true"
+			         /> 
+			 </RelativeLayout>
+
+        </TableRow>
+ 
+        <TableRow
+            android:paddingTop="4dip"
+            android:paddingBottom="4dip"
+					
+        >
+            <TextView 
+            	android:paddingLeft="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/steps"
+                android:textColor="@color/table_text"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                 />
+
+            <TextView
+                android:id="@+id/todayYouStepCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/table_text_you"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/todayGroupStepCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:textColor="@color/table_text_others"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:text="0"
+                android:paddingRight="10dip"
+            >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="4dip"
+            android:paddingBottom="4dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+        >
+            <TextView
+            	android:paddingLeft="10dip"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/calories"
+                android:textColor="@color/table_text"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                 />
+
+            <TextView
+                android:id="@+id/todayYouCaloriesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/table_text_you"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/todayGroupCaloriesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:textColor="@color/table_text_others"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:text="0.00 cal"
+                android:paddingRight="10dip"
+            >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="4dip"
+            android:paddingBottom="4dip"
+
+        >
+            <TextView
+            	android:paddingLeft="10dip"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/distance"
+                android:textColor="@color/table_text"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/todayYouDistanceCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/table_text_you"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/todayGroupDistanceCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:textColor="@color/table_text_others"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:text="0.00 mi"
+                android:paddingRight="10dip"
+            >
+            </TextView>
+        </TableRow>
+        
+      
+
+      </TableLayout>
+     
+
+   <include
+        android:id="@+id/tabBar"
+        layout="@layout/tab_bar" />
+
+
+</LinearLayout>
+
+</RelativeLayout>

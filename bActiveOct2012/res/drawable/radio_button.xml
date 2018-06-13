@@ -1,0 +1,13 @@
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    
+    <corners
+       android:radius="5dip" />
+    <gradient
+        android:angle="270"
+        android:endColor="@color/radio_button_end"
+        android:startColor="@color/radio_button_start"
+        android:type="linear" /> 
+    
+</shape>

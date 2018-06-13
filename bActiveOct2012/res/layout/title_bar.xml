@@ -1,0 +1,74 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:background="@drawable/title_bar_rect" 
+	android:gravity="center_vertical"
+>
+
+	<!--  <ImageView
+		android:id="@+id/title_bar_icon"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_marginLeft="5dip"
+		android:src="@drawable/bactive_title" />
+-->
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dip"
+	>
+
+		<TextView
+			android:id="@+id/title_bar_title"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:visibility="visible"
+			android:textColor="@color/title_bar_text"
+			android:textSize="13dip"
+			android:textStyle="bold" />
+
+		<LinearLayout
+			android:id="@+id/title_bar_alt_layout"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:visibility="invisible"
+		>
+
+			<ImageView
+				android:id="@+id/smiley_icon3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/smiley_icon"
+				android:layout_marginRight="5dip" />
+			<ImageView
+				android:id="@+id/smiley_icon2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/smiley_icon"
+				android:layout_marginRight="5dip" />
+			<ImageView
+				android:id="@+id/smiley_icon1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/smiley_icon"
+				android:layout_marginRight="5dip" />
+
+			<TextView
+				android:id="@+id/title_bar_alt_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textColor="@color/title_bar_text"
+				android:textSize="13dip" />
+				
+			
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>
